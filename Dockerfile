@@ -7,7 +7,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
         ldap-utils \
         slapd=${OPENLDAP_VERSION}* && \ 
-        && apt-get clean && \
+        apt-get clean && \
         rm -rf /var/lib/apt/lists/*
 
 RUN mv /etc/ldap /etc/ldap.dist
