@@ -1,7 +1,5 @@
 FROM debian
 
-MAINTAINER Christian Luginbühl <dinkel@pimprecords.com>
-
 ENV DEBUG_LEVEL 32768
 
 RUN apt-get update && \
