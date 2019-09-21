@@ -23,4 +23,4 @@ VOLUME ["/etc/ldap", "/var/lib/ldap"]
 ENTRYPOINT ["/entrypoint.sh"]
 
 # CMD ["sh", "-c", "slapd -h 'ldap:/// ldapi:///' -d ${DEBUG_LEVEL} -u openldap -g openldap"]
-CMD ["sh", "-c", "rsyslogd -n && slapd -h 'ldap:/// ldapi:///' -d ${DEBUG_LEVEL} -u openldap -g openldap"]
+CMD ["sh", "-c", "slapd -h 'ldap:/// ldapi:///' -d ${DEBUG_LEVEL} -u openldap -g openldap"]
